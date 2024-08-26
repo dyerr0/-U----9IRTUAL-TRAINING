@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pantalla de Inicio</title>
+    <link rel="stylesheet" href="LOGIN.css">
+</head>
+<body>
+    <div class="login-container">
+        <h2>C-TEC VIRTUAL TRAINING</h2>
+        <div id="folio" class="folio"></div>
+        <form id="login-form">
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="user-id">ID de Usuario</label>
+                    <input type="text" id="user-id" placeholder="Ingresa tu ID" required>
+                </div>
+                <div class="form-group">
+                    <label for="date">Fecha</label>
+                    <input type="text" id="date" readonly>
+                </div>
+                <div class="form-group">
+                    <label for="time">Hora</label>
+                    <input type="text" id="time" readonly>
+                </div>
+            </div>
+            <div class="form-row full-width">
+                <div class="form-group">
+                    <label for="user-name">Nombre</label>
+                    <input type="text" id="user-name" placeholder="Ingresa tu nombre" required>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="linea">Línea</label>
+                    <select id="linea" required>
+                        <option value="" disabled selected>Selecciona la Línea</option>
+                        <option value="LINEA 1">LINEA 1</option>
+                        <option value="LINEA 2">LINEA 2</option>
+                        <option value="LINEA 3">LINEA 3</option>
+                        <option value="LINEA 4">LINEA 4</option>
+                        <option value="LINEA 5">LINEA 5</option>
+                        <option value="LINEA 6">LINEA 6</option>
+                        <option value="LINEA 7">LINEA 7</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="part-number">Número de Parte</label>
+                    <select id="part-number" required disabled>
+                        <option value="" disabled selected>Selecciona el Número de Parte</option>
+                        <option value="24093 6LY00" data-linea="LINEA 1">24093 6LY00</option>
+                        <option value="24093 6LY0B" data-linea="LINEA 1">24093 6LY0B</option>
+                        <option value="24093 6LY0C" data-linea="LINEA 2">24093 6LY0C</option>
+                        <option value="24093 6LY0D" data-linea="LINEA 2">24093 6LY0D</option>
+                        <option value="24093 6LY0E" data-linea="LINEA 3">24093 6LY0E</option>
+                        <option value="24093 6LY0F" data-linea="LINEA 3">24093 6LY0F</option>
+                        <option value="24093 6LY0A" data-linea="LINEA 6">24093 6LY0A</option>
+                    </select>
+                </div>
+            </div>
+            <button type="submit">Iniciar Evaluación</button>
+        </form>
+    </div>
+    <script src="LOGIN.js"></script>
+</body>
+</html>
