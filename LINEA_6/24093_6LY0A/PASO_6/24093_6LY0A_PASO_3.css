@@ -87,26 +87,26 @@ p {
 /* Estilo para la animación del rango */
 @keyframes bounceIn {
     0% {
-        transform: scale(0.1);
+        transform: scale(0.5);
         opacity: 0;
     }
     30% {
-        transform: scale(1.5);
+        transform: scale(4);
         opacity: 1;
     }
     50% {
-        transform: scale(0.8);
+        transform: scale(1);
     }
     70% {
-        transform: scale(1.2);
+        transform: scale(2);
     }
     100% {
-        transform: scale(1);
+        transform: scale(1.5);
     }
 }
 
 #resultado {
     display: inline-block;
-    animation: bounceIn 1s ease-out; /* Duración de la animación de 1s */
+    animation: bounceIn 4s ease-out; /* Duración de la animación de 4s */
     transform-origin: center;
 }
